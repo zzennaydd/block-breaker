@@ -591,6 +591,7 @@ GameObject:
   - component: {fileID: 1999739449}
   - component: {fileID: 1999739448}
   - component: {fileID: 1999739452}
+  - component: {fileID: 1999739453}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -740,6 +741,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 12
+--- !u!114 &1999739453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999739447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6991b6a47c2680445b6904f3f3c99365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minY: -8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
