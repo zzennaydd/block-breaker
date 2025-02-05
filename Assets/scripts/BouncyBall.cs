@@ -12,7 +12,6 @@ public class BouncyBall : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if(transform.position.y < minY)
@@ -27,4 +26,12 @@ public class BouncyBall : MonoBehaviour
         }
         
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("brick"))
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+    
 }
