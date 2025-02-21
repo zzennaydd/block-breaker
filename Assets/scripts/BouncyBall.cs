@@ -24,6 +24,8 @@ public class BouncyBall : MonoBehaviour
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxVelocity);
         }
+
+        
         
     }
     private void OnCollisionEnter2D(Collision2D collision)
